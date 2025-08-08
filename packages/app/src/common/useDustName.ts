@@ -1,7 +1,7 @@
 import { skipToken, useQuery } from "@tanstack/react-query";
 import { type Hex, getAddress } from "viem";
 
-async function getKeymakerUser(userAddress: Hex): Promise<{
+async function getDustName(userAddress: Hex): Promise<{
   username: string | null;
   isWhitelisted: boolean;
 }> {
@@ -21,11 +21,11 @@ async function getKeymakerUser(userAddress: Hex): Promise<{
   ).then((res) => res.json());
 }
 
-export function useKeymakerUser(rawAddress: Hex | undefined) {
+export function useDustName(rawAddress: Hex | undefined) {
   const address = rawAddress ? getAddress(rawAddress) : undefined;
   return useQuery({
     staleTime: 1000 * 60 * 60,
     queryKey: ["keymaker-user", address],
-    queryFn: address ? () => getKeymakerUser(address) : skipToken,
+    queryFn: address ? () => getDustName(address) : skipToken,
   });
 }
