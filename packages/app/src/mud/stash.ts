@@ -12,7 +12,9 @@ const selectedDustTables = {
 
 export const tables = {
   ...selectedDustTables,
-  ...contractsConfig.tables,
+  ...contractsConfig.namespaces[
+    contractsConfig.namespace as keyof typeof contractsConfig.namespaces
+  ].tables,
 };
 
 export const stashConfig = {
