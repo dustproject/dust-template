@@ -1,6 +1,6 @@
 import { useRecord } from "@latticexyz/stash/react";
-import { playerEntityId } from "./common";
-import { stash, tables } from "./mud/stash";
+import { playerEntityId } from "./constants";
+import { stash, tables } from "../mud/stash";
 import { useMemo } from "react";
 import { bigIntMax } from "@latticexyz/common/utils";
 

@@ -1,28 +1,33 @@
 import { createStash } from "@latticexyz/stash/internal";
 import type { SyncFilter } from "@latticexyz/store-sync";
 import dustWorldConfig from "@dust/world/mud.config";
-// import contractsConfig from "contracts/mud.config";
-import { playerEntityId, worldAddress } from "../common";
+import contractsConfig from "contracts/mud.config";
+import { worldAddress } from "../common/constants";
 import { syncToStash } from "@latticexyz/store-sync/internal";
 import { redstone } from "@latticexyz/common/chains";
 
-export const tables = {
+const selectedDustTables = {
   Energy: dustWorldConfig.tables.Energy,
+};
+
+export const tables = {
+  ...selectedDustTables,
+  ...contractsConfig.tables,
 };
 
 export const stashConfig = {
   namespaces: {
     "": {
-      tables,
+      tables: selectedDustTables,
     },
+    ...contractsConfig.namespaces,
   },
 };
 
 export const filters = [
-  {
-    tableId: tables.Energy.tableId,
-    key0: playerEntityId,
-  },
+  ...Object.values(tables).map((table) => ({
+    tableId: table.tableId,
+  })),
 ] satisfies SyncFilter[];
 
 export const stash = createStash(stashConfig);

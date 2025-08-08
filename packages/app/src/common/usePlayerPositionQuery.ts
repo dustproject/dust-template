@@ -1,5 +1,5 @@
 import { skipToken, useQuery } from "@tanstack/react-query";
-import { dustClient } from "../dustClient";
+import { dustClient } from "./dustClient";
 
 type PlayerPosition = {
   x: number;
@@ -26,8 +26,8 @@ export function usePlayerPositionQuery() {
             z: Math.floor(position.z),
           };
         },
-    enabled: !!dustClient,
+    enabled: Boolean(dustClient),
     refetchIntervalInBackground: true,
-    refetchInterval: 100,
+    refetchInterval: 500,
   });
 }
