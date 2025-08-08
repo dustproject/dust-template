@@ -7,8 +7,9 @@ import { stash, tables } from "./mud/stash";
 import { useRecord } from "@latticexyz/stash/react";
 import { useMutation } from "@tanstack/react-query";
 import { resourceToHex } from "@latticexyz/common";
-import IWorldAbi from "dustkit/out/IWorld.sol/IWorld.abi";
+// import IWorldAbi from "dustkit/out/IWorld.sol/IWorld.abi";
 import mudConfig from "contracts/mud.config";
+import CounterAbi from "contracts/out/CounterSystem.sol/CounterSystem.abi.json";
 
 export default function App() {
   const { data: dustClient } = useDustClient();
@@ -34,7 +35,7 @@ export default function App() {
               namespace: mudConfig.namespace,
               name: "CounterSystem",
             }),
-            abi: IWorldAbi,
+            abi: CounterAbi,
             functionName: "increment",
             args: [],
           },
@@ -71,7 +72,11 @@ export default function App() {
         <p>Your position: {JSON.stringify(playerPosition.data, null, " ")}</p>
       )}
       <p>Counter: {counter?.value.toString() ?? "unset"}</p>
-      <button onClick={() => increment.mutate()} disabled={increment.isPending}>
+      <button
+        onClick={() => increment.mutate()}
+        disabled={increment.isPending}
+        className="bg-blue-500 text-white p-2"
+      >
         {increment.isPending ? "Incrementing..." : "Increment"}
       </button>
     </div>

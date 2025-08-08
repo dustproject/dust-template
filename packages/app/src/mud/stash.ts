@@ -4,7 +4,7 @@ import dustWorldConfig from "@dust/world/mud.config";
 import contractsConfig from "contracts/mud.config";
 import { worldAddress } from "../common/worldAddress";
 import { syncToStash } from "@latticexyz/store-sync/internal";
-import { redstone } from "@latticexyz/common/chains";
+import { redstone } from "./redstone";
 
 const selectedDustTables = {
   Energy: dustWorldConfig.tables.Energy,

@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@b324704",
+    "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@2b5a710",
     "@latticexyz/common": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
     "@latticexyz/stash": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
     "@latticexyz/store-sync": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
