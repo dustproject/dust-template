@@ -1,14 +1,16 @@
 import { useRecord } from "@latticexyz/stash/react";
-import { playerEntityId } from "./constants";
 import { stash, tables } from "../mud/stash";
 import { useMemo } from "react";
 import { bigIntMax } from "@latticexyz/common/utils";
+import { usePlayerEntityId } from "./usePlayerEntityId";
 
 export function usePlayerStatus(): "alive" | "dead" {
+  const { data: playerEntityId } = usePlayerEntityId();
+
   const energy = useRecord({
     stash,
     table: tables.Energy,
-    key: { entityId: playerEntityId },
+    key: { entityId: playerEntityId ?? "0x" },
   });
 
   const optimisticEnergy = useMemo(() => {
