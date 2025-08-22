@@ -10,14 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@f2746c5",
-    "@latticexyz/common": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
-    "@latticexyz/stash": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
-    "@latticexyz/store-sync": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
-    "@latticexyz/world": "2.2.23-e76d72504e7ee51c76fa380bdc4a56f4815b7b59",
+    "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@1979620",
+    "@latticexyz/common": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "@latticexyz/stash": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "@latticexyz/store-sync": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "@latticexyz/world": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
     "@tanstack/react-query": "^5.83.0",
     "contracts": "workspace:*",
-    "dustkit": "https://pkg.pr.new/dustproject/dust/dustkit@f2746c5",
+    "dustkit": "https://pkg.pr.new/dustproject/dust/dustkit@1979620",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "viem": "^2.33.0"
