@@ -71,6 +71,7 @@ export default function App() {
       {playerPosition.data && (
         <p>Your position: {JSON.stringify(playerPosition.data, null, " ")}</p>
       )}
+      {playerStatus && <p>Your status: {playerStatus}</p>}
       <p>Counter: {counter?.value.toString() ?? "unset"}</p>
       <button
         onClick={() => increment.mutate()}
