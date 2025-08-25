@@ -19,13 +19,13 @@
   "dependencies": {
     "@dust/programs": "https://pkg.pr.new/dustproject/dust/@dust/programs@1979620",
     "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@1979620",
-    "@latticexyz/cli": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/entrykit": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/schema-type": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/store": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/world": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/world-consumer": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/world-module-metadata": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "@latticexyz/cli": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/entrykit": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/schema-type": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/store": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/world": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/world-consumer": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/world-module-metadata": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
     "@openzeppelin/contracts": "^4.9.6",
     "solady": "^0.1.14"
   },
@@ -38,10 +38,10 @@
     "prettier-plugin-solidity": "1.3.1",
     "shx": "^0.4.0",
     "solhint": "^3.6.2",
-    "solhint-config-mud": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "solhint-plugin-mud": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "solhint-config-mud": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "solhint-plugin-mud": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3",
-    "viem": "^2.33.0"
+    "viem": "2.35.1"
   }
 }

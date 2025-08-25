@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "@dust/world": "https://pkg.pr.new/dustproject/dust/@dust/world@1979620",
-    "@latticexyz/common": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/stash": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/store-sync": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
-    "@latticexyz/world": "2.2.23-326669324dec7d19a4847159685b139ea9773ccb",
+    "@latticexyz/common": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/stash": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/store-sync": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
+    "@latticexyz/world": "2.2.23-84b8926b9c97fd6d0807aa5b84326fe9a698f264",
     "@tanstack/react-query": "^5.83.0",
     "contracts": "workspace:*",
     "dustkit": "https://pkg.pr.new/dustproject/dust/dustkit@1979620",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "viem": "^2.33.0"
+    "viem": "2.35.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
